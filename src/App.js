@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Generador de Excusas</h1>
+
+      <form className="form">
+        <h2>Obtener excusas</h2>
+        <label>
+          Cantidad:
+          <input />
+        </label>
+        <label>
+          Categoría:
+          <input />
+        </label>
+        <button>Enviar</button>
+      </form>
+
+      <div className="random-excuse">
+        <h2>Excusa random al inicio:</h2>
+        <p></p>
+      </div>
+
     </div>
   );
 }
